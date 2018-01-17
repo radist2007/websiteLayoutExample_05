@@ -1,4 +1,7 @@
 $(function() {
+    console.clear();
+    console.log("ScrollMagic v%s loaded", ScrollMagic.version);
+
     var controller = new ScrollMagic.Controller();
 
     var wipeAnimation = new TimelineMax()
@@ -6,22 +9,22 @@ $(function() {
             $('nav').children().removeClass('active');
             $('#firstLink').addClass('active')
           })
-        .fromTo(".blue",  1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
+        .fromTo(".blue",  1, {y: "-100%"}, {y: "0%",  ease: Power4.easeInOut})
         .call(function() {
             $('nav').children().removeClass('active');
             $('#secondLink').addClass('active')
           })
-        .fromTo(".yellow",  1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
+        .fromTo(".yellow",  1, {x: "-100%"}, {x: "0%",  ease: Power4.easeInOut})
         .call(function() {
             $('nav').children().removeClass('active');
             $('#thirdLink').addClass('active')
           })
-        .fromTo(".green",   1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})
+        .fromTo(".green",   1, {x:  "100%"}, {x: "0%",  ease: Power4.easeInOut})
         .call(function() {
             $('nav').children().removeClass('active');
             $('#fourthLink').addClass('active')
           }) 
-        .fromTo(".red",     1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+        .fromTo(".red",     1, {y: "100%"}, {y: "0%",  ease: Power4.easeInOut})
         .call(function() {
             $('nav').children().removeClass('active');
             $('#fivethLink').addClass('active')
