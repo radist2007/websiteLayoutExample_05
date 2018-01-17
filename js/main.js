@@ -36,17 +36,15 @@ $(function() {
         .setTween(wipeAnimation)
         // .addIndicators()
         .addTo(controller);
-
-    // controller.scrollTo(function(newpos) {
-    //     TweenMax.to(window, 1, {
-    //         scrollTo: {
-    //         y: newpos
-    //         }
-    //     });
-    // });
+        // console.log(window)
+    controller.scrollTo(function(newpos) {
+        console.log('scrol to: ' + newpos)
+        TweenMax.to(window, 1, {scrollTo: {y: newpos}});
+    });
 
     $("header nav a").on('click', function() {
-        // console.log('click');
+        // window.scrollTo({x: 200});
+        console.log('click');
         var targetSection = $(this).attr('href').substring(1);
         var targetPerc = (targetSection - 1) / ($("header nav a").length - 1);
         var targetPos = scene.scrollOffset() + (scene.duration() * targetPerc);
