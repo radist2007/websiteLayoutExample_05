@@ -17,7 +17,8 @@ header nav {
     text-align: center;
 }
 header nav a {
-    margin: 0 20px;
+
+    margin: 0 20px 20px;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -33,7 +34,8 @@ header nav a {
     height: 100%;
     width: 100%;
 }
-b {
+label {
+    margin-bottom: 50px;
     font-family: DriftWood, sans-serif;
     font-size: 80px;
     color: #000;
