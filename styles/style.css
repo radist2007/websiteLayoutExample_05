@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+header {
+    z-index: 999;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+header nav {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+header nav a {
+    margin: 0 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    /* text-shadow: 0 0 3px #000; */
+    text-shadow: 0 0 5px #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.active {
+    text-decoration: underline;
+}
+.wrap {
+    height: 100%;
+    width: 100%;
+}
+b {
+    font-family: DriftWood, sans-serif;
+    font-size: 80px;
+    color: #000;
+    /* background-color: #fff; */
+    text-shadow: 1px 1px 8px #fff;
+}
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 50px; */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.hero, .blue, .yellow, .green, .red {
+    background-size: cover;
+    background-position: center center;
+}
+.hero {
+    background-image: url('../img/one_1280x720.jpg');
+}
+.blue {
+    background-image: url('../img/two_1280x720.jpg');
+}
+.yellow {
+    background-image: url('../img/three_1280x720.jpg');
+}
+.green {
+    background-image: url('../img/four_1280x720.jpg');
+}
+.red {
+    background-image: url('../img/five_1280x720.jpg');
+}
