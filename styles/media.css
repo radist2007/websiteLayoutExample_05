@@ -1,0 +1,6 @@
+@media all and (max-width: 320px) {
+
+    .hero {
+        background-image: url('../img/one_320x575.jpg');
+    }
+}

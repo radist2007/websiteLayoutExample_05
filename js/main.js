@@ -33,12 +33,13 @@ $(function() {
     var scene = new ScrollMagic.Scene({
             triggerElement: "#pinContainer",
             triggerHook: "onLeave",
-            duration: "500%"
+            duration: "500%",
         })
         .setPin("#pinContainer")
         .setTween(wipeAnimation)
         // .addIndicators()
         .addTo(controller);
+
     controller.scrollTo(function(newpos) {
         console.log('scrol to: ' + newpos)
         TweenMax.to(window, 1, {scrollTo: {y: newpos}});
@@ -51,4 +52,5 @@ $(function() {
         // console.log(targetPos)
         controller.scrollTo(targetPos);
     });
+
 });
