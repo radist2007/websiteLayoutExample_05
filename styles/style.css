@@ -57,7 +57,7 @@ label {
     height: 100vh;
     position: absolute;
 }
-.hero, .blue, .yellow, .green, .red {
+.hero, .one, .two, .three, .four {
     background-size: cover;
     background-position: center center;
 }
