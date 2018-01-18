@@ -43,9 +43,9 @@ label {
     text-shadow: 1px 1px 8px #fff;
 }
 #pinContainer {
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .panel {
     display: flex;
@@ -54,7 +54,7 @@ label {
     /* padding-top: 50px; */
     text-align: center;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     position: absolute;
 }
 .hero, .blue, .yellow, .green, .red {
@@ -62,17 +62,21 @@ label {
     background-position: center center;
 }
 .hero {
+    background-color: red;
     background-image: url('../img/one_1280x720.jpg');
 }
-.blue {
+.one {
+    background-color: red;
     background-image: url('../img/two_1280x720.jpg');
 }
-.yellow {
+.two {
+    background-color: red;
     background-image: url('../img/three_1280x720.jpg');
 }
-.green {
+.three {
+    background-color: red;
     background-image: url('../img/four_1280x720.jpg');
 }
-.red {
+.four {
     background-image: url('../img/five_1280x720.jpg');
 }
